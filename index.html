@@ -73,7 +73,7 @@
       padding: 20px;
       overflow: auto;
       display: flex;
-      flex-direction: column;
+      flex-direction: row;
       flex-wrap: nowrap;
       gap: 10px;
       background: #fafafa;
@@ -136,14 +136,6 @@
     const orientationSelect = document.getElementById('orientation');
     const outputPanel = document.getElementById('output-panel');
     const downloadCompositeButton = document.getElementById('download-composite');
-
-    function updateOrientation() {
-      const orientation = orientationSelect.value;
-      outputPanel.style.flexDirection = orientation;
-      outputPanel.style.flexWrap = 'nowrap';
-    }
-    orientationSelect.addEventListener('change', updateOrientation);
-    updateOrientation();
 
     function createImageWrapper(src) {
       const wrapper = document.createElement('div');

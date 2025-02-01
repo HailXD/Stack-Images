@@ -69,15 +69,14 @@
       background: #ffc107;
     }
     .output-panel {
-      flex-grow: 1;
-      padding: 20px;
-      overflow: auto;
-      display: flex;
-      flex-direction: row;
-      flex-wrap: nowrap;
-      gap: 10px;
-      background: #fafafa;
-      box-shadow: inset 4px 4px 0 #ccc;
+        flex-grow: 1;
+        padding: 20px;
+        overflow: auto;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 10px;
+        background: #fafafa;
+        box-shadow: inset 4px 4px 0 #ccc;
     }
     .output-panel .image-wrapper {
       position: relative;
